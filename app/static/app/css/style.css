@@ -1,0 +1,57 @@
+html, body {
+	overflow: hidden;
+	text-align: center;
+	font-family: Arial;	
+}
+
+#title {
+	margin-top: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#video-container {
+	text-align: center;
+	font-size: 30px;
+
+}
+#video, #canvas {
+	margin: auto auto;
+	border:1px solid black;
+	border-radius: 2px;
+}
+
+#button-container {
+	text-align: center;
+	font-size: 30px;
+}
+
+#instructions-container {
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+#instructions {
+	font-size: 20px;
+	width: 200px;
+	height: 45px;
+}
+
+#snap {
+	font-size: 20px;
+	width: 140px;
+	height: 45px;
+}
+
+#recognize {
+	font-size: 20px;
+	width: 140px;
+	height: 45px;
+}
+
+#canvas {
+	background-color: #F3F3F3;
+}
