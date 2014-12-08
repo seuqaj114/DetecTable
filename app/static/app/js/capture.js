@@ -29,10 +29,31 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 
 	// Trigger photo take
-	document.getElementById("snap").addEventListener("click", function() {
+	$("#snap").on("click", function() {
 		context.drawImage(video, 0, 0, 640, 480);
         img.src = canvas.toDataURL();
         //console.log(img.src);
+	});
+
+	$("#recognize").on("click",function(){
+		console.log("get table clicked");
+		console.log(startCorner);
+		$.ajax({
+			url:"recognize",
+			type:"GET",
+			data:{
+				startCorner:startCorner,
+				finishCorner:finishCorner
+			},
+			success: function(json){
+				console.log(json);
+				console.log("success");
+			},
+			error: function(xhr,errmsg,err){
+				console.log(err);
+				console.log("error");
+			}
+		});
 	});
 
 
