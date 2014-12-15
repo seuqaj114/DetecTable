@@ -1,0 +1,47 @@
+<html>
+<head>
+
+	<meta charset="UTF-8">
+
+	{% load staticfiles %}
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}" />
+
+	<link rel="stylesheet" href="{% static 'app/css/style.css' %}"/>
+
+
+
+	<title>Handwritten table recognition software</title>
+</head>
+
+<body>
+	<div id="title">
+		Table recognition software
+	</div>
+	<div id="instructions-container">
+		<button id="instructions" class="btn btn-default">Instructions</button>
+	</div>
+	<div id="video-container">
+		<video id="video" width="640" height="480" visible="True" autoplay></video>
+		<canvas id="canvas" width="640" height="480" visible="True"></canvas>
+	</div>
+
+	<div id="button-container">
+		<button id="snap" class="btn btn-success">Snap Photo</button>
+		<button id="recognize" class="btn btn-primary">Get Table</button>
+	</div>
+
+	{{form.image}}
+	<img id="img" src=""/> 
+
+	<div id="table-container">
+		
+	</div>
+	
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="static/app/js/capture.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</body>
+</html>
