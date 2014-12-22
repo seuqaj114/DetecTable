@@ -13,8 +13,8 @@ html, body {
 #video-container {
 	text-align: center;
 	font-size: 30px;
-
 }
+
 #video, #canvas {
 	margin: auto auto;
 	border:1px solid black;
