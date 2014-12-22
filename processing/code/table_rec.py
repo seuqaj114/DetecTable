@@ -250,8 +250,8 @@ def get_cell(ROWS,COLS,dims):
 					RECT_CENTER[1]+(BASE_HEIGHT/2-cell_height)
 					)))	
 
-			croped_cell.show()
-			croped_cells.append(croped_cell)
+			#croped_cell.show()
+			croped_cells.append((cell,croped_cell))
 			#croped_cell.filter(ImageFilter.SMOOTH).show()
 			
 	return croped_cells
